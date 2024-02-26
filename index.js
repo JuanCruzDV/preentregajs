@@ -20,7 +20,9 @@ for(let i=0; i < 1; i++ ){
     pilotos.push({ piloto1: piloto1,piloto2: piloto2 })
 }
 
-console.log(pilotos)
+pilotos.forEach((piloto)=>{
+    console.log(piloto)
+})
 
 let respuesta = prompt("¿Comenzar a correr? escribir SI para empezar o NO para salir")
 
