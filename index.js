@@ -5,14 +5,28 @@ const pista =  {
 }
 console.log(pista);
 
-const kart = {
+const karts = {
     color: 'verde',
     motor: '100cc',
     ruedas: 4
 }
-console.log(kart);
+console.log(karts);
 
-let respuesta = prompt("Bienvenido/a a GO KARTS, desea jugar? escribir SI para empezar o NO para salir")
+const pilotos = []
+
+for(let i=0; i < 1; i++ ){
+    const piloto1 = prompt("¡Bienvenidos a GO KARTS!, ingrese nombre del primer piloto:")
+    const piloto2 = prompt("Ingrese nombre del segundo piloto:")
+    pilotos.push({ piloto1: piloto1,piloto2: piloto2 })
+}
+
+console.log(pilotos)
+
+let respuesta = prompt("¿Comenzar a correr? escribir SI para empezar o NO para salir")
+
+if((respuesta == 'NO') || (respuesta !== 'SI')){
+    alert("¡Gracias por venir!")
+}
 
 while(respuesta === 'SI'){
     const velocidad1 = Math.floor(Math.random() * (10 + 1));
@@ -43,6 +57,12 @@ while(respuesta === 'SI'){
         alert("Favor de seleccionar un número de kart correcto")
     }
 
-    respuesta = prompt("¿Desea seguir jugando? escribir SI para empezar o NO para salir")
+
+    respuesta = prompt("¿Desea seguir corriendo? escribir SI para empezar o NO para salir")
+
+    if((respuesta == 'NO') || (respuesta !== 'SI')){
+        alert("¡Gracias por venir!")
+    }
 
 }
+
