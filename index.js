@@ -24,13 +24,13 @@ pilotos.forEach((piloto)=>{
     console.log(piloto)
 })
 
-let respuesta = prompt("¿Comenzar a correr? escribir SI para empezar o NO para salir")
+let respuesta = prompt("¿Comenzar a correr? escribir: \n - 1 para empezar \n - 2 para salir")
 
-if((respuesta == 'NO') || (respuesta !== 'SI')){
+if((respuesta == '2') || (respuesta !== '1')){
     alert("¡Gracias por venir!")
 }
 
-while(respuesta === 'SI'){
+while(respuesta === '1'){
     const velocidad1 = Math.floor(Math.random() * (10 + 1));
     const velocidad2 = Math.floor(Math.random() * (10 + 1));
     function correr(){
@@ -60,9 +60,9 @@ while(respuesta === 'SI'){
     }
 
 
-    respuesta = prompt("¿Desea seguir corriendo? escribir SI para empezar o NO para salir")
+    respuesta = prompt("¿Desea seguir corriendo? escribir: \n - 1 para empezar \n - 2 para salir")
 
-    if((respuesta == 'NO') || (respuesta !== 'SI')){
+    if((respuesta == '2') || (respuesta !== '1')){
         alert("¡Gracias por venir!")
     }
 
